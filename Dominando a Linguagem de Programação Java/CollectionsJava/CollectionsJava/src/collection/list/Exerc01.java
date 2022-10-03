@@ -21,7 +21,8 @@ public class Exerc01 {
         notas2.add(0.0);
         notas2.add(3.6);
         System.out.println("Crie uma lista chamada notas2 " + notas2 + "e coloque todos os elementos da list Arraylist nessa nova lista: ");
-        System.out.println("Mostre a primeira nota da nova lista sem removê-lo: ");
-        System.out.println("Mostre a primeira nota da nova lista removendo-o: ");
+        System.out.println("Mostre a primeira nota da nova lista sem removê-lo: " + notas2.get(0));
+        System.out.println("Mostre a primeira nota da nova lista removendo-o: " + notas2.remove(0));
+        System.out.println(notas2);
     }
 }

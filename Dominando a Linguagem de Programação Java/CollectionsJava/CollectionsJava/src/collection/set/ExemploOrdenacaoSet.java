@@ -11,9 +11,12 @@ Série 3 = nome: that '70s show, genero: comédia, tempoEpisodio: 25
 import java.util.*;
 
 public class ExemploOrdenacaoSet {
+    //para iniciarmos uma nova lista com a interface set devemos criar uma class primeiro
+
     public static void main(String[] args) {
 
         System.out.println("--\tOrdem aleatória\t--");
+        //cria-se o set e estancia-se os parametros
         Set<Serie> minhasSeries = new HashSet<>(){{
             add(new Serie("got", "fantasia", 60));
             add(new Serie("dark", "drama", 60));
@@ -30,7 +33,10 @@ public class ExemploOrdenacaoSet {
         }};
         for (Serie serie: minhasSeries1) System.out.println(serie.getNome() + " - "
                 + serie.getGenero() + " - " + serie.getTempoEpisodio());
-
+        // utilizando a treeset para ordedar de acordo com o tempo de de episodeo
+        //cria-se um comparable
+        //cria-se o criterio de desempate para não ocorrer de manter somente um das caracteristicas iguais
+        //pois a interface Set não aceita parametros iguais utilizando o compareTo para isso 
         System.out.println("--\tOrdem natural (TempoEpisodio)\t--");
         Set<Serie> minhasSeries2 = new TreeSet<>(minhasSeries1);
         for (Serie serie: minhasSeries2) System.out.println(serie.getNome() + " - "
@@ -51,16 +57,18 @@ public class ExemploOrdenacaoSet {
 }
 
 class Serie implements Comparable<Serie>{
+    //cria-se as veriaveis de armazenamento
     private String nome;
     private String genero;
     private Integer tempoEpisodio;
 
+//cria-se o construtor com 3 parametros
     public Serie(String nome, String genero, Integer tempoEpisodio) {
         this.nome = nome;
         this.genero = genero;
         this.tempoEpisodio = tempoEpisodio;
     }
-
+//cria-se os gets para gerenciamentos dos atributos
     public String getNome() {
         return nome;
     }
@@ -73,6 +81,7 @@ class Serie implements Comparable<Serie>{
         return tempoEpisodio;
     }
 
+//Cria-se o método toString retorna uma representação string de um objeto
     @Override
     public String toString() {
         return "{" +
@@ -82,6 +91,7 @@ class Serie implements Comparable<Serie>{
                 '}';
     }
 
+//cria-se o metodo equals para comparações dos atributos
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -90,11 +100,12 @@ class Serie implements Comparable<Serie>{
         return nome.equals(serie.nome) && genero.equals(serie.genero) && tempoEpisodio.equals(serie.tempoEpisodio);
     }
 
+//cria-se o metodo hashcode(código hash) é um valor inteiro associado com todos os objetos em Java.
     @Override
     public int hashCode() {
         return Objects.hash(nome, genero, tempoEpisodio);
     }
-
+//cria-se o metodo de comparação
     @Override
     public int compareTo(Serie serie) {
         int tempoEpisodio = Integer.compare(this.getTempoEpisodio(), serie.getTempoEpisodio());

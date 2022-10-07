@@ -36,7 +36,7 @@ public class ExemploOrdenacaoSet {
         // utilizando a treeset para ordedar de acordo com o tempo de de episodeo
         //cria-se um comparable
         //cria-se o criterio de desempate para não ocorrer de manter somente um das caracteristicas iguais
-        //pois a interface Set não aceita parametros iguais utilizando o compareTo para isso 
+        //pois a interface Set não aceita parametros iguais utilizando o compareTo para isso
         System.out.println("--\tOrdem natural (TempoEpisodio)\t--");
         Set<Serie> minhasSeries2 = new TreeSet<>(minhasSeries1);
         for (Serie serie: minhasSeries2) System.out.println(serie.getNome() + " - "

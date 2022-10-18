@@ -219,7 +219,7 @@ public class ExerciciosStreamAPI {
  *         numerosAleatoriosInteger1.removeIf(integer -> (integer % 2 != 0));
  *         System.out.println(numerosAleatoriosInteger1);
  */
-/**================================Exemplos fora da aula para estudar================================
+/*================================Exemplos fora da aula para estudar================================
  *         System.out.println("Ignore os 3 primeiros elementos da lista e imprima o restante:");
  *         numerosAleatoriosInteger.stream()
  *                 .skip(3)

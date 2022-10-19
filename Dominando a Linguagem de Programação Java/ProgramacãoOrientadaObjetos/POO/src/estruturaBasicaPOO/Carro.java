@@ -33,6 +33,15 @@ public class Carro {
  * | m1(long l, String s)    |
  * |=========================|
  */
+
+/**================================🟣 Método Set================================
+ * Usamos set para definir valores. Esse tipo de método geralmente não retorna valores.
+ */
+
+/**================================🟠 Método Get================================
+ * Usamos get para obter informações. Esse tipo de método sempre retorna um valor.
+ */
+
     public String getCor() {
         return cor;
     }
@@ -48,5 +57,14 @@ public class Carro {
     public void setModelo(String modelo) {
         this.modelo = modelo;
     }
+
+    public int getCapacidadeTanque() {
+        return capacidadeTanque;
+    }
+
+    public void setCapacidadeTanque(int capacidadeTanque) {
+        this.capacidadeTanque = capacidadeTanque;
+    }
+
 
 }

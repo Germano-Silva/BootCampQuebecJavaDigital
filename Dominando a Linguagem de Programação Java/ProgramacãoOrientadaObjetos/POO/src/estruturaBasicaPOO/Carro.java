@@ -7,16 +7,46 @@ public class Carro {
     String cor;
     String modelo;
     int capacidadeTanque;
-    //📖 Cria-se o Método conforme seu retorno
-    //⚙ Método Construtor possibilita a criação de objetos a partir da Classe
-    Carro(){
+/**================================⚙ Método Construtor================================
+ * 📖 Cria-se o Método conforme seu retorno
+ * ⚙ Método Construtor: possibilita a criação de objetos a partir da Classe
+ *     Carro(){}
+ */
 
-    }
-    //💣 Método Destrutor auxilia-se na destruição de um objeto,
-    // deve sempre iniciar com a palavra "void" não possuindo retorno
-    void finalise(){
-        //A sua função é a liberação de memora/recurso ocioso, dispensável e não mais utilizado
+/**================================💣 Método Destrutor================================
+ * 💣 Método Destrutor: auxilia-se na destruição de um objeto,
+ * deve sempre iniciar com a palavra "void" não possuindo retorno
+ * A sua função é a liberação de memora/recurso ocioso, dispensável e não mais utilizado
+ *     void finalise(){}
+ */
+
+/**================================🚛 Método Sobrecarga================================
+ * 🚛 Método Sobrecarga: É a utilização de um único método com o mesmo nome
+ * porem seus parâmetros diferentes modificando a sua assinatura = nome + parâmetros
+ * |=========================|
+ * |          Exemplo        |
+ * |=========================|
+ * | m1()                    |
+ * | m1(int i)               |
+ * | m1(float f)             |
+ * | m1(String s, long l)    |
+ * | m1(long l, String s)    |
+ * |=========================|
+ */
+    public String getCor() {
+        return cor;
     }
 
-    //🚛 Método Sobrecarga:
+    public void setCor(String cor) {
+        this.cor = cor;
+    }
+
+    public String getModelo() {
+        return modelo;
+    }
+
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
+
 }

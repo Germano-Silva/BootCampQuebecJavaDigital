@@ -1,5 +1,16 @@
-// Abaixo segue um exemplo de código que você pode ou não utilizar
-
+package desafio;
+/**================================""================================
+ * Em um jogo 2D existe um robô de limpeza que começa na posição (0,0).
+ * Ele recebe alguns comandos através de uma sequência de movimentos.
+ * Os movimentos válidos são:
+ * 'W' (movimento para cima);
+ * "S" (movimento para baixo);
+ * "D" (movimento para direita);
+ * "A" (movimento para esquerda).
+ * Você deverá verificar se após completar seus movimentos o robô se encontra na posição (0,0).
+ * Retorne true se o robô retornar à origem ou false caso contrário.
+ * Assuma que a magnitude do movimento do robô é a mesma para cada movimento.
+ * */
 import java.util.*;
 
 public class Robo{

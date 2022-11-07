@@ -6,28 +6,22 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.7.5</version>
-		<type>pom</type>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>br.com.meuPrimeiroProjeto</groupId>
-	<artifactId>meu-projeto-springboot</artifactId>
+	<groupId>com.bean</groupId>
+	<artifactId>Beans</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>meu-projeto-springboot</name>
-	<description>Meu primeiro projeto com SpringBoot inicialazer.</description>
+	<name>Beans </name>
+	<description>Bean é uma anotação de nível de método e um análogo direto do elemento XML</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
+			<artifactId>spring-boot-starter</artifactId>
 		</dependency>
 
-		<dependency>
-			<groupId>com.h2database</groupId>
-			<artifactId>h2</artifactId>
-			<scope>runtime</scope>
-		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>

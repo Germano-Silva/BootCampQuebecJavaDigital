@@ -20,7 +20,7 @@ public class Livro {
         return nome;
     }
 
-    public static void setNome(String nome) {
+    public void setNome(String nome) {
         this.nome = nome;
     }
 
@@ -28,10 +28,10 @@ public class Livro {
         return codigo;
     }
 
-    public static void setCodigo(String codigo) {
+    public void setCodigo(String codigo) {
         this.codigo = codigo;
     }
-    public static void exibir(){
+    public void exibir(){
         System.out.println(this.nome + " - " + this.codigo);
         AutorLivro.exibirAutor();
     }

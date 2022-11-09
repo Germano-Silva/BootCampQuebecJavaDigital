@@ -1,7 +1,9 @@
 package com.simplificandoprojeto;
-
+@RestController
 public class Controller {
-    public String mnsagem(){
-        
+    @GetMapping("/")
+    public String mensgagem(){
+        return "Nosso primeiro projeto Spring Boot Web";
     }
+
 }

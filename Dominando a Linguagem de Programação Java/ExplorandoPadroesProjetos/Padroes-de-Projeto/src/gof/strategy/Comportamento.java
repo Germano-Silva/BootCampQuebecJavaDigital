@@ -1,7 +1,5 @@
 package gof.strategy;
 
-public class Comportamento {
-    void mover() {
-
-    }
+public interface Comportamento {
+    void mover();
 }

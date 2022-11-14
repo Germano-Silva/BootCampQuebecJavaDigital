@@ -9,7 +9,7 @@ import gof.strategy.*;
 public class Test {
     public static void main(String[] args) {
 
-        // Singleton
+        // Singleton teste
 
         SingletonLazy lazy = SingletonLazy.getInstancia();
         System.out.println(lazy);
@@ -26,7 +26,7 @@ public class Test {
         lazyHolder = SingletonLazyHolder.getInstancia();
         System.out.println(lazyHolder);
 
-        // Strategy
+        // Strategy teste
 
         Comportamento defensivo = new ComportamentoDefensivo();
         Comportamento normal = new ComportamentoNormal();
@@ -43,7 +43,7 @@ public class Test {
         robo.mover();
         robo.mover();
 
-        // Facade
+        // Facade teste
 
         Facade facade = new Facade();
         facade.migrarCliente("Venilton", "14801788");
